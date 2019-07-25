@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="Bootstrap 4.3.1/css/bootstrap.min.css">	
+<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+
+<body>
+<div class="main">
+	<div class="calculator-top">
+		<form name="form">
+			<input class="textview" name="textview">
+		</form>
+	</div>
+	
+	<div class="calculator-buttons">
+	<table width="200px">
+  <tbody>
+    <tr>
+      <th scope="row"><input type="button" class="button" value="C" onClick="clean()"></th>
+      <td><input type="button" class="button" value="CE" onClick="back()"></td>
+      <td><input type="button" class="button" value="/" onClick="insert('/')"></td>
+      <td><input type="button" class="button" value="x" onClick="insert('*')"></td>
+    </tr>
+    <tr>
+      <th scope="row"><input type="button" class="button" value="7" onClick="insert(7)"></th>
+      <td><input type="button" class="button" value="8" onClick="insert(8)"></td>
+      <td><input type="button" class="button" value="9" onClick="insert(9)"></td>
+      <td><input type="button" class="button" value="-" onClick="insert('-')"></td>
+    </tr>
+    <tr>
+      <th scope="row"><input type="button" class="button" value="4" onClick="insert(4)"></th>
+      <td><input type="button" class="button" value="5" onClick="insert(5)"></td>
+      <td><input type="button" class="button" value="6" onClick="insert(6)"></td>
+      <td><input type="button" class="button" value="+" onClick="insert('+')"></td>
+    </tr>
+    <tr>
+      <th scope="row"><input type="button" class="button" value="3" onClick="insert(3)"></th>
+      <td><input type="button" class="button" value="2" onClick="insert(2)"></td>
+      <td><input type="button" class="button" value="1" onClick="insert(1)"></td>
+      <td rowspan="5"><input type="button" style="height: 106px" class="button" value="=" onClick="equal('=')"></td>
+    </tr>
+	<tr>
+      <th scope="row"><input type="button" class="button" value="." onClick="insert('.')" ></th>
+      <td><input type="button" class="button" value="0" onClick="insert(0)"></td>
+      <td><input type="button" class="button" value="%" onClick="insert('%')"></td>
+      
+    </tr>  
+  </tbody>
+</table>
+
+	</div>
+	
+</div>
+<script src="main.js"></script>	
+</body>
+</html>
